@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+</head>
+<body>
+    <p>Redirecting back to app...</p>
+    <script>
+        // Redirect immediately with all URL parameters
+        window.location.href = 'myapp://auth/callback' + window.location.search + window.location.hash;
+        
+        // Close window
+        setTimeout(() => window.close(), 500);
+    </script>
+</body>
+</html>
